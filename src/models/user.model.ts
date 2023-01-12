@@ -1,13 +1,13 @@
 import {Entity, model, property} from '@loopback/repository';
 
-@model({settings: {strict: false}})
+@model({settings: {strict: false, strictObjectIDCoercion: true}})
 export class User extends Entity {
   @property({
-    type: 'number',
+    type: 'string',
     id: true,
-    generated: true,
+    mongodb: {dataType: 'ObjectId'},
   })
-  id?: number;
+  id: string;
 
   @property({
     type: 'string',
