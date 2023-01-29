@@ -10,12 +10,12 @@ import {ServiceMixin} from '@loopback/service-proxy';
 import path from 'path';
 import {MySequence} from './sequence';
 
-import {AuthenticationComponent} from '@loopback/authentication';
-import {
-  JWTAuthenticationComponent,
-  SECURITY_SCHEME_SPEC,
-  UserServiceBindings,
-} from '@loopback/authentication-jwt';
+// import {AuthenticationComponent} from '@loopback/authentication';
+// import {
+//   JWTAuthenticationComponent,
+//   SECURITY_SCHEME_SPEC,
+//   UserServiceBindings,
+// } from '@loopback/authentication-jwt';
 // import {DbDataSource} from './datasources';
 
 export {ApplicationConfig};
